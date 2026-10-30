@@ -1,3 +1,5 @@
+## Guesser
+
 ### main
 ```
 public static void main(String[] args)
@@ -57,4 +59,26 @@ void computerGuesser()
         if response equals "h": high = guess - 1
         else if response equals "l": low = guess + 1
 ```
+## Blackbelt
+
+Black belt version is in Blackbelt.java, run with `make runbb`
+
+
+### humanGuesser and computerGuesser (blackbelt)
+```
+    same as before, but return tries at the end
+```
+
+### race (blackbelt)
+```
+    print the rules
+    humanTries = humanGuesser()
+    computerTries = computerGuesser()
+    print both counts
+    if humanTries < computerTries print "Human wins!"
+    else if computerTries < humanTries print "Computer wins"
+    else print "It's a tie"
+```
+## Pushing the envelope
+Added a Race option in Blackbelt.java. The human guesses a random number then the computer guesses one, and whoever used fewer tries wins. humanGuesser and computerGuesser return their try count so race can compare them.
 
